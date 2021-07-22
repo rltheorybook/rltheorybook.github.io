@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46766886-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-46766886-4');
+  </script>
+
+
+<script type="text/javascript">
+  function visibility_on(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'none')
+           e.style.display = 'block';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'none')
+           e.style.display = 'block';
+  }
+  function visibility_off(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'block')
+           e.style.display = 'none';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'block')
+           e.style.display = 'none';
+  }
+  function toggle_visibility(id) {
+      var e = document.getElementById(id+"_text");
+      if(e.style.display == 'inline')
+         e.style.display = 'block';
+      else
+         e.style.display = 'inline';
+      var e = document.getElementById(id+"_img");
+      if(e.style.display == 'inline')
+         e.style.display = 'block';
+      else
+         e.style.display = 'inline';
+  }
+  function toggle_vis(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'none')
+          e.style.display = 'inline';
+      else
+          e.style.display = 'none';
+  }
+</script>
+
+
+  <meta name=viewport content="width=800">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+    
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+    
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+    
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+    
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <title>CS 4789/5789 Intro to RL</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>COLT 2021 Tutorial: Statistical Foundations of Reinforcement Learning</name>
+              </p>
+              
+              <br>The goal of this tutorial is to provide the attendees with an overview of techniques and 
+              recipes for distributed estimation and testing under constraints. Over the recent years, 
+              many papers have obtained both upper and lower bounds for statistical estimation under communication, 
+              local privacy, and memory constraints: these questions are motivated by applications in machine learning 
+              and distributed computing, and are at the intersection of theoretical computer science, machine learning, 
+              statistics, and information theory. Our goal is to provide a primer of those techniques,
+               aiming to provide both an understanding of the underlying challenges and ideas, and “plug-and- play” 
+               general recipes the attendees could then apply to the problems of their choice. 
+               Our focus will be on establishing lower bounds for statistical estimation, 
+               in particular for parameter estimation (single- and high-dimensional) and testing. 
+               The tutorial will cover various models: nonadaptive, sequentially adaptive, 
+               blackboard model, and memory-constrained settings; with applications to high-dimensional 
+               parameter estimation and testing. (If time allows, we will briefly cover extensions to nonparametric density estimation.) </br>
+            </td>
+          </tr>
+        </table>
+
+        
+
+    
+
+        
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <p align="center">
+                <heading>Staff</heading>
+              </p>
+              <p>
+                <br><strong>Main Presenters</strong>: <a href="https://people.cs.umass.edu/~akshay/">Akshay Krishnamurthy</a> (MSR NYC), <a href="https://wensun.github.io">Wen Sun</a> (Cornell) </br>
+                <br><strong>Presenters</strong>: Chris Dann, Fei Feng, Christina Yu, Andrea Zanette, </br>
+                <br><strong> Tutorial time: </strong> August 5th 7:15 - 10:15 am (Mountain Time)  </br>
+                
+                
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <p align="center">
+                <heading>Zoom / Gather Town Information</heading>
+              </p>
+              <p>
+                 TBD
+              </p>
+            </td>
+          </tr>
+        </table>
+
+
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <p align="center">
+              <heading>Relavent Notes / Papers</heading>
+              </p>
+                    <p> 
+              Book draft "Reinforcement Learning Theory and
+          Algorithms", available 
+              <a
+          href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">here</a>.</p>
+          
+                  </td>
+                </tr>
+              </table>
+
+
+
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                  <td width="100%" valign="middle">
+                    <p align="center">
+                      <heading>Schedule (tentative)</heading>
+                    </p>
+                    
+                    <table>
+              <tbody>
+                        <tr height="50" bgcolor="#F8F8FF">
+                          <td></td>
+                          <td></td>
+                          <td> <strong>Session</strong></td>
+                          <td>Reading</td>
+                          <td>Slides/Problem Sets </td>
+                        </tr>
+                
+                        <tr height="50">
+                          <td>7:15am-8am</td>
+                          <td></td>
+                          <td> <strong>Fundamentals</strong>: Markov Decision Processes, Natural Policy Gradient, and Upper Confidence Bound Exploration</td>
+                          <td><a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">Ch.1</a> of AJKS,   </td>, 
+                          <td><a href="CS6789_data/basics_MDP.pdf">Slides</a>, <a href="CS6789_data/basics_MDP_annotated.pdf">Annotated slides</a> </td>
+                        </tr>
+      
+                        <tr height="50" bgcolor="#F8F8FF">
+                            <td>8:15am-9am</td>
+                            <td></td>
+                            <td> <strong>Recitation / Practice: </strong>Analysis of UCB-VI and NPG</td>
+                            <td></td>
+                            <td> </td>
+                          </tr>
+  
+                        
+                        <tr height="50">
+                            <td>9:15am-10:15am</td>
+                            <td></td>
+                            <td> <strong>Generalization in RL</strong>: Function Approximation, Bellman Rank, Bilinear Class </td>
+                            <td></td>, 
+                            <td></td>
+                        </tr> 
+ 
+      
+                
+                     </tbody></td></tr>
+                    </table>
+      
+      
+      
+                  </td>
+                </tr>
+              </table>
+      
+      
+              
+     
+
+        
+
+
+     
+
+
+        
+        </td>
+    </tr>
+  </table>
+</body>
+
+</html>
