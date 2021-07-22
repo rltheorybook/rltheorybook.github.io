@@ -142,19 +142,27 @@
                 <name>COLT 2021 Tutorial: Statistical Foundations of Reinforcement Learning</name>
               </p>
               
-              <br>The goal of this tutorial is to provide the attendees with an overview of techniques and 
-              recipes for distributed estimation and testing under constraints. Over the recent years, 
-              many papers have obtained both upper and lower bounds for statistical estimation under communication, 
-              local privacy, and memory constraints: these questions are motivated by applications in machine learning 
-              and distributed computing, and are at the intersection of theoretical computer science, machine learning, 
-              statistics, and information theory. Our goal is to provide a primer of those techniques,
-               aiming to provide both an understanding of the underlying challenges and ideas, and "plug-and- play"
-               general recipes the attendees could then apply to the problems of their choice. 
-               Our focus will be on establishing lower bounds for statistical estimation, 
-               in particular for parameter estimation (single- and high-dimensional) and testing. 
-               The tutorial will cover various models: nonadaptive, sequentially adaptive, 
-               blackboard model, and memory-constrained settings; with applications to high-dimensional 
-               parameter estimation and testing. (If time allows, we will briefly cover extensions to nonparametric density estimation.) </br>
+              <br>The past decade has seen tremendous interest in sequential decision making under 
+              uncertainty, a broad class of problems involving an agent interacting with an unknown 
+              environment to accomplish some goal. Reinforcement learning approaches to addressing 
+              these problems have led to recent AI breakthroughs in game playing, robotics, and 
+              elsewhere. Inspired by these empirical demonstrations, many researchers from the learning
+              theory community have turned their attention to reinforcement learning, in an attempt to 
+              better understand these problems and develop new algorithmic principles. Their efforts 
+              have led to a more-modern statistical foundation for reinforcement learning that places 
+              an emphasis on non-asymptotic characterizations via global convergence, sample 
+              complexity, and regret analyses. </br>
+
+              <br>This tutorial will provide an overview of this emerging theory with a focus on the 
+              most challenging online exploration setting. The tutorial is organized into three sections:
+          <ol>
+            <li>Part 1 will cover the necessary background and definitions. We focus here on the most basic setting of tabular Markov Decision Processes and consider problems of increasing difficulty: from planning, to optimization with an exploratory distribution, to online exploration. We will present two algorithms: Natural Policy Gradient for the optimization problem and UCB-Value Iteration for exploration, along with their guarantees. </li>
+            <li>Part 2 will be organized in smaller discussion groups led by the tutorial presenters and other researchers in the field. We will cover the analyses for NPG and UCB-VI in detail, highlighting key lemmas that are broadly useful in reinforcement learning, as well as technical connections to related fields. </li>
+            <li>Part 3 will focus on online exploration beyond the tabular setting, where function approximation is required for generalization. Here we will provide a tour of the zoo of RL models and complexity measures that enable tractable learning, as well as some statistical barriers. We will close with some open problems and future directions. </li>
+          </ol>
+
+
+          <br>The tutorial will be accessible to all COLT attendees. No background knowledge in RL is required, but we do expect tutorial attendees to be comfortable with the standard mathematical tools used in learning theory research, such as concentration inequalities and some linear algebra. </br>
             </td>
           </tr>
         </table>
